@@ -1,3 +1,4 @@
+import 'package:cafeelicious_mobile/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'splash_screen.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(),
+      home: LoginScreen(),
     );
   }
 }
