@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'dart:async'; 
-import 'login_screen.dart'; 
+import 'dart:async';
+import 'login_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    
+
     // Timer untuk navigasi ke halaman login setelah 3 detik
     Timer(Duration(seconds: 3), () {
       Navigator.pushReplacement(
@@ -26,7 +26,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFEDEBE5), 
+      backgroundColor: const Color(0xFFEDEBE5),
       body: Center(
         child: Container(
           width: 240,
@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: Image.asset(
-            'assets/cafeelicious.png', 
+            'assets/cafeelicious.png',
             fit: BoxFit.cover,
           ),
         ),

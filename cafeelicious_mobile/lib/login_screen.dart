@@ -78,7 +78,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: [
                         Text(
                           "EMAIL",
-                          style: TextStyle(fontSize: 14, color: Colors.grey[700]),
+                          style:
+                              TextStyle(fontSize: 14, color: Colors.grey[700]),
                         ),
                         SizedBox(height: 8),
                         TextField(
@@ -95,7 +96,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         SizedBox(height: 16),
                         Text(
                           "PASSWORD",
-                          style: TextStyle(fontSize: 14, color: Colors.grey[700]),
+                          style:
+                              TextStyle(fontSize: 14, color: Colors.grey[700]),
                         ),
                         SizedBox(height: 8),
                         TextField(
@@ -103,7 +105,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           decoration: InputDecoration(
                             suffixIcon: IconButton(
                               icon: Icon(
-                                _obscurePassword ? Icons.visibility : Icons.visibility_off,
+                                _obscurePassword
+                                    ? Icons.visibility
+                                    : Icons.visibility_off,
                               ),
                               onPressed: () {
                                 setState(() {
@@ -207,7 +211,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           children: [
                             Expanded(child: Divider()),
                             Padding(
-                              padding: const EdgeInsets.symmetric(horizontal: 8),
+                              padding:
+                                  const EdgeInsets.symmetric(horizontal: 8),
                               child: Text("Or"),
                             ),
                             Expanded(child: Divider()),
@@ -218,18 +223,25 @@ class _LoginScreenState extends State<LoginScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             GestureDetector(
-                              onTap: () => _launchURL('https://www.facebook.com/'),
-                              child: SocialButton(icon: FontAwesomeIcons.facebook, color: Colors.blue),
+                              onTap: () =>
+                                  _launchURL('https://www.facebook.com/'),
+                              child: SocialButton(
+                                  icon: FontAwesomeIcons.facebook,
+                                  color: Colors.blue),
                             ),
                             SizedBox(width: 16),
                             GestureDetector(
                               onTap: () => _launchURL('https://x.com/'),
-                              child: SocialButton(icon: FontAwesomeIcons.twitter, color: Colors.blue),
+                              child: SocialButton(
+                                  icon: FontAwesomeIcons.twitter,
+                                  color: Colors.blue),
                             ),
                             SizedBox(width: 16),
                             GestureDetector(
                               onTap: () => _launchURL('https://www.apple.com'),
-                              child: SocialButton(icon: FontAwesomeIcons.apple, color: Colors.black),
+                              child: SocialButton(
+                                  icon: FontAwesomeIcons.apple,
+                                  color: Colors.black),
                             ),
                           ],
                         ),
