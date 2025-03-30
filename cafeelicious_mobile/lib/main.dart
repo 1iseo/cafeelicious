@@ -1,3 +1,4 @@
+import 'package:cafeelicious_mobile/flex_theme.dart';
 import 'package:cafeelicious_mobile/login_screen.dart';
 import 'package:flutter/material.dart';
 import 'splash_screen.dart';
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: lightTheme,
       debugShowCheckedModeBanner: false,
       home: LoginScreen(),
     );

@@ -1,3 +1,4 @@
+import 'package:cafeelicious_mobile/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -25,6 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       backgroundColor: Color(0xFF542C0D),
       body: LayoutBuilder(builder: (context, constraints) {
         return SingleChildScrollView(
@@ -34,6 +36,7 @@ class _LoginScreenState extends State<LoginScreen> {
             children: [
               // Header
               Container(
+                
                 height: 200,
                 decoration: BoxDecoration(
                   color: Color(0xFF542C0D),
@@ -188,7 +191,9 @@ class _LoginScreenState extends State<LoginScreen> {
                             Text("Don’t have an account? "),
                             GestureDetector(
                               onTap: () {
-                                Navigator.pushNamed(context, '/register');
+                                Navigator.push(context, MaterialPageRoute(
+                                  builder: (context) => RegisterScreen(),
+                                ));
                               },
                               child: Text(
                                 "SIGN UP",
